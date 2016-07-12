@@ -10,33 +10,33 @@
 
     <TextArea editable="false" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="5" fx:id="display"/>
 
-    <Button GridPane.columnIndex="0" GridPane.rowIndex="1" minHeight="35" minWidth="45" onAction="#handleOperator" disable="true" text="MC"/>
-    <Button GridPane.columnIndex="1" GridPane.rowIndex="1" minHeight="35" minWidth="45" onAction="#handleOperator" disable="true" text="MR"/>
-    <Button GridPane.columnIndex="2" GridPane.rowIndex="1" minHeight="35" minWidth="45" onAction="#handleOperator" disable="true" text="MS"/>
-    <Button GridPane.columnIndex="3" GridPane.rowIndex="1" minHeight="35" minWidth="45" onAction="#handleOperator" disable="true" text="M+"/>
-    <Button GridPane.columnIndex="4" GridPane.rowIndex="1" minHeight="35" minWidth="45" onAction="#handleOperator" disable="true" text="M-"/>
-    <Button GridPane.columnIndex="0" GridPane.rowIndex="2" minHeight="35" minWidth="45" onAction="#handleOperator" disable="true" text="-"/>
-    <Button GridPane.columnIndex="1" GridPane.rowIndex="2" minHeight="35" minWidth="45" onAction="#handleOperator" disable="true" text="CE"/>
-    <Button GridPane.columnIndex="2" GridPane.rowIndex="2" minHeight="35" minWidth="45" onAction="#handleOperator" disable="false" text="C"/>
-    <Button GridPane.columnIndex="3" GridPane.rowIndex="2" minHeight="35" minWidth="45" onAction="#handleOperator" disable="true" text="+-"/>
-    <Button GridPane.columnIndex="4" GridPane.rowIndex="2" minHeight="35" minWidth="45" onAction="#handleOperator" disable="true" text="sqrt"/>
-    <Button GridPane.columnIndex="0" GridPane.rowIndex="3" minHeight="35" minWidth="45" onAction="#handleNumber" disable="false" text="7"/>
-    <Button GridPane.columnIndex="1" GridPane.rowIndex="3" minHeight="35" minWidth="45" onAction="#handleNumber" disable="false" text="8"/>
-    <Button GridPane.columnIndex="2" GridPane.rowIndex="3" minHeight="35" minWidth="45" onAction="#handleNumber" disable="false" text="9"/>
-    <Button GridPane.columnIndex="3" GridPane.rowIndex="3" minHeight="35" minWidth="45" onAction="#handleOperator" disable="false" text="/"/>
-    <Button GridPane.columnIndex="4" GridPane.rowIndex="3" minHeight="35" minWidth="45" onAction="#handleOperator" disable="true" text="\%"/>
-    <Button GridPane.columnIndex="0" GridPane.rowIndex="4" minHeight="35" minWidth="45" onAction="#handleNumber" disable="false" text="4"/>
-    <Button GridPane.columnIndex="1" GridPane.rowIndex="4" minHeight="35" minWidth="45" onAction="#handleNumber" disable="false" text="5"/>
-    <Button GridPane.columnIndex="2" GridPane.rowIndex="4" minHeight="35" minWidth="45" onAction="#handleNumber" disable="false" text="6"/>
-    <Button GridPane.columnIndex="3" GridPane.rowIndex="4" minHeight="35" minWidth="45" onAction="#handleOperator" disable="false" text="*"/>
-    <Button GridPane.columnIndex="4" GridPane.rowIndex="4" minHeight="35" minWidth="45" onAction="#handleOperator" disable="true" text="1/n"/>
-    <Button GridPane.columnIndex="0" GridPane.rowIndex="5" minHeight="35" minWidth="45" onAction="#handleNumber" disable="false" text="1"/>
-    <Button GridPane.columnIndex="1" GridPane.rowIndex="5" minHeight="35" minWidth="45" onAction="#handleNumber" disable="false" text="2"/>
-    <Button GridPane.columnIndex="2" GridPane.rowIndex="5" minHeight="35" minWidth="45" onAction="#handleNumber" disable="false" text="3"/>
-    <Button GridPane.columnIndex="3" GridPane.rowIndex="5" minHeight="35" minWidth="45" onAction="#handleOperator" disable="false" text="-"/>
-    <Button GridPane.columnIndex="4" GridPane.rowIndex="5" minHeight="77" minWidth="45" onAction="#handleOperator" disable="false" text="=" GridPane.rowSpan="2"/>
-    <Button GridPane.columnIndex="0" GridPane.rowIndex="6" minHeight="35" minWidth="95" onAction="#handleNumber" disable="false" text="0" GridPane.columnSpan="2"/>
-    <Button GridPane.columnIndex="2" GridPane.rowIndex="6" minHeight="35" minWidth="45" onAction="#handleOperator" disable="true" text="."/>
-    <Button GridPane.columnIndex="3" GridPane.rowIndex="6" minHeight="35" minWidth="45" onAction="#handleOperator" disable="false" text="+"/>
+    <Button GridPane.columnIndex="0" GridPane.rowIndex="1" minHeight="35" minWidth="45" onAction="#handleCommand"           disable="true"  text="MC"/>
+    <Button GridPane.columnIndex="1" GridPane.rowIndex="1" minHeight="35" minWidth="45" onAction="#handleCommand"           disable="true"  text="MR"/>
+    <Button GridPane.columnIndex="2" GridPane.rowIndex="1" minHeight="35" minWidth="45" onAction="#handleCommand"           disable="true"  text="MS"/>
+    <Button GridPane.columnIndex="3" GridPane.rowIndex="1" minHeight="35" minWidth="45" onAction="#handleCommand"           disable="true"  text="M+"/>
+    <Button GridPane.columnIndex="4" GridPane.rowIndex="1" minHeight="35" minWidth="45" onAction="#handleCommand"           disable="true"  text="M-"/>
+    <Button GridPane.columnIndex="0" GridPane.rowIndex="2" minHeight="35" minWidth="45" onAction="#handleOperator"          disable="true"  text="-"/>
+    <Button GridPane.columnIndex="1" GridPane.rowIndex="2" minHeight="35" minWidth="45" onAction="#handleCommand"           disable="true"  text="CE"/>
+    <Button GridPane.columnIndex="2" GridPane.rowIndex="2" minHeight="35" minWidth="45" onAction="#handleCommand"           disable="false" text="C"/>
+    <Button GridPane.columnIndex="3" GridPane.rowIndex="2" minHeight="35" minWidth="45" onAction="#handleUnaryOperator"     disable="true"  text="+-"/>
+    <Button GridPane.columnIndex="4" GridPane.rowIndex="2" minHeight="35" minWidth="45" onAction="#handleUnaryOperator"     disable="false"  text="&#8730;"/>
+    <Button GridPane.columnIndex="0" GridPane.rowIndex="3" minHeight="35" minWidth="45" onAction="#handleNumber"            disable="false" text="7"/>
+    <Button GridPane.columnIndex="1" GridPane.rowIndex="3" minHeight="35" minWidth="45" onAction="#handleNumber"            disable="false" text="8"/>
+    <Button GridPane.columnIndex="2" GridPane.rowIndex="3" minHeight="35" minWidth="45" onAction="#handleNumber"            disable="false" text="9"/>
+    <Button GridPane.columnIndex="3" GridPane.rowIndex="3" minHeight="35" minWidth="45" onAction="#handleOperator"          disable="false" text="/"/>
+    <Button GridPane.columnIndex="4" GridPane.rowIndex="3" minHeight="35" minWidth="45" onAction="#handleOperator"          disable="true"  text="\%"/>
+    <Button GridPane.columnIndex="0" GridPane.rowIndex="4" minHeight="35" minWidth="45" onAction="#handleNumber"            disable="false" text="4"/>
+    <Button GridPane.columnIndex="1" GridPane.rowIndex="4" minHeight="35" minWidth="45" onAction="#handleNumber"            disable="false" text="5"/>
+    <Button GridPane.columnIndex="2" GridPane.rowIndex="4" minHeight="35" minWidth="45" onAction="#handleNumber"            disable="false" text="6"/>
+    <Button GridPane.columnIndex="3" GridPane.rowIndex="4" minHeight="35" minWidth="45" onAction="#handleOperator"          disable="false" text="*"/>
+    <Button GridPane.columnIndex="4" GridPane.rowIndex="4" minHeight="35" minWidth="45" onAction="#handleUnaryOperator"     disable="true"  text="1/n"/>
+    <Button GridPane.columnIndex="0" GridPane.rowIndex="5" minHeight="35" minWidth="45" onAction="#handleNumber"            disable="false" text="1"/>
+    <Button GridPane.columnIndex="1" GridPane.rowIndex="5" minHeight="35" minWidth="45" onAction="#handleNumber"            disable="false" text="2"/>
+    <Button GridPane.columnIndex="2" GridPane.rowIndex="5" minHeight="35" minWidth="45" onAction="#handleNumber"            disable="false" text="3"/>
+    <Button GridPane.columnIndex="3" GridPane.rowIndex="5" minHeight="35" minWidth="45" onAction="#handleOperator"          disable="false" text="-"/>
+    <Button GridPane.columnIndex="4" GridPane.rowIndex="5" minHeight="77" minWidth="45" onAction="#handleEquals"            disable="false" text="=" GridPane.rowSpan="2"/>
+    <Button GridPane.columnIndex="0" GridPane.rowIndex="6" minHeight="35" minWidth="95" onAction="#handleNumber"            disable="false" text="0" GridPane.columnSpan="2"/>
+    <Button GridPane.columnIndex="2" GridPane.rowIndex="6" minHeight="35" minWidth="45" onAction="#handleNumber"            disable="false"  text="."/>
+    <Button GridPane.columnIndex="3" GridPane.rowIndex="6" minHeight="35" minWidth="45" onAction="#handleOperator"          disable="false" text="+"/>
 
 </GridPane>

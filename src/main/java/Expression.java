@@ -1,42 +1,69 @@
 package main.java;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import static main.java.Operator.*;
 
 public class Expression {
-    private List<Integer> arguments = new ArrayList<>();
+    private Double operand1;
+    private Double operand2;
+    private String operator = "+";
+    private Double result;
 
-    public Expression append(Integer integer) {
-        arguments.add(integer);
-        return this;
+    public Double evaluate() {
+        switch (operator) {
+            case PLUS:
+                System.out.print(this);
+                result = operand1 + operand2;
+                break;
+            case MINUS:
+                System.out.print(this);
+                result = operand1 - operand2;
+                break;
+            case DIVISION:
+                System.out.print(this);
+                if (operand2 == 0) {
+                    result = 0.0;
+                    operand1 = 0.0;
+                } else {
+                    result = operand1 / operand2;
+                }
+
+                break;
+            case PRODUCT:
+                System.out.print(this);
+                if (operand2 == null) {
+                    operand2 = operand1;
+                }
+                result = operand1 * operand2;
+                break;
+        }
+        operand1 = result;
+        System.out.println(" = " + result);
+        return result;
+    }
+
+    public void setOperator(String operator) {
+        this.operator = operator;
+    }
+
+    public void setOperand(int which, Double newValue) {
+        switch (which) {
+            case 1:
+                operand1 = newValue;
+                break;
+            case 2:
+                operand2 = newValue;
+                break;
+        }
     }
 
     @Override
     public String toString() {
-        return arguments.toString();
+        return operand1 + " "
+                + operator + " "
+                + operand2;
     }
 
-    public int evaluate(String operator) {
-        int res = 0;
-        if (arguments.size() == 1) {
-            return arguments.get(0);
-        }
-        if (arguments.size() == 0) {
-            return 0;
-        }
-
-        switch (operator) {
-            case MINUS:
-                res = arguments.get(0) - arguments.get(1);
-                break;
-            case PLUS:
-                res = arguments.get(0) + arguments.get(1);
-                break;
-            case EQUALS:
-                arguments.clear();
-        }
-        return res;
+    public double getResult() {
+        return result;
     }
 }

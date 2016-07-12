@@ -12,8 +12,12 @@ public class App extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("../resources/simpleLayout.fxml"));
         stage.setScene(new Scene(root, 265, 360, Paint.valueOf("D9E4F1")));
-        stage.setTitle("SimpleCalc");
+        stage.setTitle("Calc");
         stage.resizableProperty().set(false);
         stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
     }
 }
